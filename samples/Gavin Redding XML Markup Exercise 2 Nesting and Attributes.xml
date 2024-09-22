@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <entrie date="1858-08-23">
+        <heading>August 23</heading>
+
+        <transcript>
+            <condition type="weather">
+                <weather type="heavy-rain"/>
+                <location place="newfoundland"/>
+                <time when="12:00 P.M.-6:00 A.M."/>
+            </condition>
+
+            <sender-reciever sender="newfoundland" reciver="valentia"/>
+            <message NB="1">
+                <request type="repeat">Your currents very irregular. Repeat</request>
+            </message>
+
+            <sender-reciever sender="valentia" reciever="newfoundland"/>
+            <message NB="2">
+                <condition type="weak-signal">“Signals weak.</condition>
+                <question>Will you take message from <person who="Sir Robert Walter Carden">Lord
+                        Mayor?</person></question>
+            </message>
+
+            <sender-reciever sender="newfoundland" reciever="valentia"/>
+            <message NB="3">
+                <answer type="yes">Yes</answer>
+                <request>send little faster and better</request>
+            </message>
+
+            <sender-reciever sender="valentia" reciever="newfoundland"/>
+            <message NB="4">Give ‘understand ‘every twenty words </message>
+            <sender-reciever sender="newfoundland" reciever="valentia"/>
+            <message NB="5">All right. Send much faster</message>
+            <message NB="6">Understand, faster</message>
+            <issue>
+                <time when="almost-entire-day">
+                    <verb>Testing</verb>
+                    <location where="valentia"/>
+                </time>
+            </issue>
+        </transcript>
+    </entrie>
+</root>
