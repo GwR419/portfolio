@@ -1,0 +1,41 @@
+body {
+  background-color: lavender;
+  font-size: 25px;
+}
+
+h1 {
+  color: Black;
+  text-align: left;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+Nav {
+    color: black;
+    text-align:right;
+    position: relative;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
