@@ -1,20 +1,67 @@
 body {
   background-color: lavender;
   font-size: 25px;
- font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
                     
 }
 
-h1 {
-  color: Black;
-  text-align: left;
+li{
+    
+    
 }
 
+
+
+
+ul{ display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
 p {
-  font-family: verdana;
-  font-size: 20px;
+  
+  font-size: 15px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  
 }
-
+h1 {
+    
+    
+}
+h2 {
+    
+    
+    
+}
+h3 {
+    
+    
+    
+}
+h4 {
+    
+    
+    
+}
+h5 {
+    
+    
+    
+}
+h6 {
+    
+    
+    
+}
 Nav {
     color: black;
     text-align:right;
@@ -81,7 +128,28 @@ span.c {
 main {
     margin: 3% auto 3% auto;
     width: 95%;
-    
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+.split{
+display: flex;
+justify-content: space-between;
+
+
+
+
+
+
+}
+
+
+.apart{
+
+
+
+
+  
+}
 
