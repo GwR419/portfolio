@@ -6,12 +6,20 @@ body {
                     
 }
 
-.div.images{
+.images{
   flex: 2%;
   width: 250px;
 }
 
+.essay{
 
+text-align: center;
+-ms-flex-align: center;
+margin-inline-start: 25%;
+margin-inline-end: 25%;
+
+
+}
 
 
 ul{ display: block;
