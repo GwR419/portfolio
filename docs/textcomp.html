@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Text Analysis</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav">
-        <a href="index.html">
-            <img src="images/thumbnail.png" alt="GwR419" width="125px">
-        </a>
-        <div class="flex-container">
-            <nav class="icons">
-                <a href="About.html">ABOUT ME</a>
-                <a href="Resume.html">RESUME</a>
-                <a href="https://github.com/GwR419">GITHUB</a>
-                <a href="projects.html">PROJECTS</a>
-                <a href="https://sites.psu.edu/gwr419/">WORDPRESS</a>
-            
-            </nav>
-        </div>
+      <a href="index.html">
+        <img src="images/thumbnail.png" alt="GwR419" width="125px" />
+      </a>
+      <div class="flex-container">
+        <nav class="icons">
+          <a href="About.html">ABOUT ME</a>
+          <a href="Resume.html">RESUME</a>
+          <a href="https://github.com/GwR419">GITHUB</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="https://sites.psu.edu/gwr419/">WORDPRESS</a>
+        </nav>
+      </div>
     </div>
     <div>
-        <h3>
-            <a href="projects.html">Back</a>
-        </h3>
+      <h3>
+        <a href="projects.html">Back</a>
+      </h3>
     </div>
     <div>
-        <h3>Text Comparison</h3>
+      <h3>Text Comparison</h3>
+      
+      <section class="analysis">
         <h5>Kennedy</h5>
-        <section class="textcomp">
-<img src="kennedy-state-of-the-union\kennedy-antconc.png" alt="kennedy-state-of-the-union" width="80%">
-<figcaption>This is the result on Antconc with an N-gram of three for JKF's State Of The Union. Being "the united states' being the most freqent N-gram at 10 times.
-</figcaption>
-<h5>Voyant Kennedy Links</h5>
-<iframe style='width: 500px; height: 500px;' src='https://voyant-tools.org/tool/CollocatesGraph/?query=new&query=world&query=nations&corpus=88f8221c4dc0b73db3d4ab55fa7b1bd3'></iframe>
-<h5>Text files used:</h5>
-<p><a href="kennedy-state-of-the-union\Kennedy_1962.txt">Kennedy_1962.txt</a> |
-<a href="kennedy-state-of-the-union\Kennedy_1963.txt">Kennedy_1963.txt</a></p>
-        </section>
+        <figure class="kennedy">
+        
+          <div class="kennedy">
+          <img class="kennedy" src="kennedy-state-of-the-union\kennedy-antconc.png"alt="kennedy-state-of-the-union"/>
+          <img class="kennedy" src="kennedy-state-of-the-union/n-gram-size-5-kennedy.png" alt="N-gram of size 5">
+          </div>
+          <figcaption>
+            This is the result on Antconc with an N-gram of three for JKF's
+            State Of The Union. Being "the united states' being the most freqent
+            N-gram at 10 times.
+          </figcaption>
+        </figure>
+        <h5>Voyant Kennedy Links</h5>
+        <iframe
+          style="width: 500px; height: 500px"
+          src="https://voyant-tools.org/tool/CollocatesGraph/?query=new&query=world&query=nations&corpus=88f8221c4dc0b73db3d4ab55fa7b1bd3"
+        ></iframe>
+        <h5>Text files used:</h5>
+        <p>
+          <a href="kennedy-state-of-the-union\Kennedy_1962.txt">Kennedy_1962</a> |
+          <a href="kennedy-state-of-the-union\Kennedy_1963.txt">Kennedy_1963</a>
+        </p>
+      </section>
+      
+      <section class="analysis">
         <h5>Nixon</h5>
-        <section class="textcomp">
-            <img src="nixon-state-of-the-union\nixon-antconc.png" alt="nixon-state-of-the-union" width="80%">
-            <figcaption>This is the result on Antconc with an N-gram of three for Nixon's State Of The Union. Being "in the world' being the most freqent N-gram at 25 times.</figcaption>
-            <h4>Voyant Nixon Links</h4>
-            <iframe style='width: 500px; height: 500px; ' src='https://voyant-tools.org/tool/CollocatesGraph/?view=CollocatesGraph&query=new&query=people&query=congress&corpus=850b98682508648b968ad345fa3c5682'></iframe>
-            <h5>Text files used:</h5>
-            <p><a href="nixon-state-of-the-union\Nixon_1970.txt">Nixon_1970</a> |
-            <a href="nixon-state-of-the-union\Nixon_1971.txt">Nixon_1971</a> |
-            <a href="nixon-state-of-the-union\Nixon_1972.txt">Nixon_1972</a> |
-            <a href="nixon-state-of-the-union\Nixon_1973.txt">Nixon_1973</a> |
-            <a href="nixon-state-of-the-union\Nixon_1974.txt">Nixon_1974</a> </p>
-            </section>
+        <figure>
+          <img
+            src="nixon-state-of-the-union\nixon-antconc.png"
+            alt="nixon-state-of-the-union"
+            width="80%"
+          />
+          <figcaption>
+            This is the result on Antconc with an N-gram of three for Nixon's
+            State Of The Union. Being "in the world' being the most freqent
+            N-gram at 25 times.
+          </figcaption>
+        </figure>
+        <h4>Voyant Nixon Links</h4>
+        <iframe
+          style="width: 500px; height: 500px"
+          src="https://voyant-tools.org/tool/CollocatesGraph/?view=CollocatesGraph&query=new&query=people&query=congress&corpus=850b98682508648b968ad345fa3c5682"
+        ></iframe>
+        <h5>Text files used:</h5>
+        <p>
+          <a href="nixon-state-of-the-union\Nixon_1970.txt">Nixon_1970</a> |
+          <a href="nixon-state-of-the-union\Nixon_1971.txt">Nixon_1971</a> |
+          <a href="nixon-state-of-the-union\Nixon_1972.txt">Nixon_1972</a> |
+          <a href="nixon-state-of-the-union\Nixon_1973.txt">Nixon_1973</a> |
+          <a href="nixon-state-of-the-union\Nixon_1974.txt">Nixon_1974</a>
+        </p>
+      </section>
     </div>
     <h2>Why?</h2>
-    <p>The reason as to why i chose to look at Kennedy and Nixons State of The Unions Speeches was becasue on of my great uncles was obsessed and very intrested in the Kennedy assaination so i have seen a lot of things relating to Kennedy but also relating to Nixon <br>so I though it would cool and quite intresting to go back and look and stdy through those speeches to learn more about them and more about what was going on with context. </p>
-
-</body>
+    <p>
+      The reason as to why i chose to look at Kennedy and Nixons State of The
+      Unions Speeches was becasue on of my great uncles was obsessed and very
+      intrested in the Kennedy assaination so i have seen a lot of things
+      relating to Kennedy but also relating to Nixon <br />so I though it would
+      cool and quite intresting to go back and look and stdy through those
+      speeches to learn more about them and more about what was going on with
+      context.
+    </p>
+  </body>
 </html>
