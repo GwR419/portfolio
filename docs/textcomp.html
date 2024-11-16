@@ -28,13 +28,14 @@
     <div>
       <h3>Text Comparison</h3>
       
+      <p class="tc">For my Text analysis with Antconc and Voyant I decided to compare Kenndy's State of the Union With Nixons State of the Union.</p>
       <section class="analysis">
         <h5>Kennedy</h5>
         <figure class="kennedy">
         
           <div class="kennedy">
           <img class="kennedy" src="kennedy-state-of-the-union\kennedy-antconc.png"alt="kennedy-state-of-the-union"/>
-          <img class="kennedy" src="kennedy-state-of-the-union/n-gram-size-5-kennedy.png" alt="N-gram of size 5">
+          <img class="kennedy" src="kennedy-state-of-the-union/kennedy-kwic-cluster.PNG" alt="N-gram of size 5">
           </div>
           <figcaption>
             This is the result on Antconc with an N-gram of three for JKF's
@@ -42,11 +43,27 @@
             N-gram at 10 times.
           </figcaption>
         </figure>
-        <h5>Voyant Kennedy Links</h5>
+        <section class="analysis">
+          <figure class="kennedy">
+          
+            <div class="kennedy">
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-ngram-5.PNG"alt="kennedy-state-of-the-union"/>
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-5-kwic.PNG" alt="N-gram of size 5">
+            <img  class="kennedy"   src="kennedy-state-of-the-union/need to strengthn our nation.PNG" alt="Need to strengthn out nation">
+            </div>
+            <figcaption>
+              In this set of images with an N-gram of 5 the phrase that showed up the most was "need to strengthn our nation" with coming up 4 times. And the way it comes up it was used in a list going from first, second, third, and fourth about protecting this nations youth, health, the basic rights of its citizens, and making the best of our reasources and economics.
+
+            </figcaption>
+          </figure>
+        <h5>Voyant Kennedy Dynamic Network Export</h5>
         <iframe
           style="width: 500px; height: 500px"
           src="https://voyant-tools.org/tool/CollocatesGraph/?query=new&query=world&query=nations&corpus=88f8221c4dc0b73db3d4ab55fa7b1bd3"
-        ></iframe>
+        ></iframe> 
+        <p>This is a dynamic network export that I got from Voyant. 
+          This shows you every stop word and how much it was used for 
+          nixons speech with "new" being the most used word in all his State of the Unions being used 59 times, "world" 43 times, and "nations" 39 times.</p>
         <h5>Text files used:</h5>
         <p>
           <a href="kennedy-state-of-the-union\Kennedy_1962.txt">Kennedy_1962</a> |
@@ -54,25 +71,36 @@
         </p>
       </section>
       
-      <section class="analysis">
+      <section class="nixon">
         <h5>Nixon</h5>
-        <figure>
-          <img
-            src="nixon-state-of-the-union\nixon-antconc.png"
-            alt="nixon-state-of-the-union"
-            width="80%"
-          />
+        <figure class="nixon">
+          <div class="nixon">
+          <img class="nixon" src="nixon-state-of-the-union\nixon-antconc.png"alt="nixon-state-of-the-union"/>
+          <img class="nixon" src="nixon-state-of-the-union/Nixon-Kwic-cluster.PNG" alt="Nixon State of the Union 3 gram cluster">
+        </div>
           <figcaption>
             This is the result on Antconc with an N-gram of three for Nixon's
             State Of The Union. Being "in the world' being the most freqent
             N-gram at 25 times.
           </figcaption>
         </figure>
-        <h4>Voyant Nixon Links</h4>
-        <iframe
-          style="width: 500px; height: 500px"
-          src="https://voyant-tools.org/tool/CollocatesGraph/?view=CollocatesGraph&query=new&query=people&query=congress&corpus=850b98682508648b968ad345fa3c5682"
+        <figure class="nixon">
+          <div class="nixon">
+          <img class="nixon" src="nixon-state-of-the-union/nixon-ngram-5.PNG"alt="nixon-state-of-the-union"/>
+          <img class="nixon" src="nixon-state-of-the-union/nixon-kwic-5.PNG" alt="Nixon State of the Union 3 gram cluster">
+          <img class="nixon" src="nixon-state-of-the-union/can be the congress.PNG" alt="Can be the congress" width="50%">
+        </div>
+          <figcaption>
+          In Nixon's State of the Union speeches with N-gram clustres of 5 the phrase "can be the congress that" a total of 5 times in which Nixon seems to be talking about the acomplishments of the congress or what he wishes of the accomplishments
+          of the congress for the future. As it shows in the last image above it is laid out in a list of order.
+          </figcaption>
+        </figure>
+        <h4>Voyant Nixon Dynamic Network Export</h4>
+        <iframe style="width: 500px; height: 500px" src="https://voyant-tools.org/tool/CollocatesGraph/?view=CollocatesGraph&query=new&query=people&query=congress&corpus=850b98682508648b968ad345fa3c5682"
         ></iframe>
+        <p>This is a dynamic network export that I got from Voyant. 
+          This shows you every stop word and how much it was used for 
+          nixons speech with "new" being the most used word in all his State of the Unions being used 115 times, "people" 105 times, and congress 102 times.</p>
         <h5>Text files used:</h5>
         <p>
           <a href="nixon-state-of-the-union\Nixon_1970.txt">Nixon_1970</a> |
@@ -83,12 +111,21 @@
         </p>
       </section>
     </div>
+
+    <h2>Comparison</h2>
+      <p>With this comparison I wanted to see if Kennedy or anything relating to what happend to him showed up in Nixon's State of the Union speeches or if anything showed up about kenndy becasue they were going against one another for presidency in 1960.
+      I did like what it showed me with kennedy in Nixon's speech and I was suprised by that. As you would image for a State of the Union you wouldn't bring up the past. But in this case I would imagine it to be differnt as Kenndy had been assasinated 11 years ago after Nixon himslef ran against Kenndy.
+        Another comparison/contarst that could be made was kennedy's speech was oblivously shorter that Nixons becasue of the assaination incident so i was not able to get as big of clusters or N-gram sizes, for exapmle in Kennedy's files the world that showed up the most was "new" (which was also the most used word in Nixon's)
+        But it only showed up59 times while the word "new" showed up 115 times. In Nixon's there was 19,778 tokens but in kennedy's there was only 11,988 tokens still over 10,000 but still not that many. Another thing that was diffrent it was especially seen in the 5 gram clusters that kennedys was about the peoples safty, economy, health, and rights. Nixons was more about the congress and the accomplishments that it has made rather than its people.
+      A thing i wounder about is in the 60's it seemed a lot about the people but after the 60's it was a lot about the government I wonder if this is a result of the vietnam war, or threats of wars around the world especially the Cuban missle crisis in 1962 and Bay of Pig's invasion in 1961. and is lasting afffects over the years. </p>
+
+
     <h2>Why?</h2>
     <p>
       The reason as to why i chose to look at Kennedy and Nixons State of The
       Unions Speeches was becasue on of my great uncles was obsessed and very
       intrested in the Kennedy assaination so i have seen a lot of things
-      relating to Kennedy but also relating to Nixon <br />so I though it would
+      relating to Kennedy but also relating to Nixon <br/>so I though it would
       cool and quite intresting to go back and look and stdy through those
       speeches to learn more about them and more about what was going on with
       context.

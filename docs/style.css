@@ -162,12 +162,19 @@ main {
 
 /* TextCopm Images subsection ============= */
 
+
+figure.kennedy {
+  background-color: mediumpurple;
+  
+}
+
 img.kennedy {width:100%;
 }
 
-div.kennedy{ flex: 5;
-    width: 50%;
-    display: flex;
+div.kennedy{
+    width: 90%;
+    
+    background-color: mediumpurple;
 }
   
 
@@ -180,8 +187,25 @@ section.analysis { width: 100%;
   }
   
 
-.textcomp.flex {
-flex: content;
-width: 80%;
+
+
+
+
+p.tc {background-color: mediumpurple;
 
 }
+
+div.nixon{
+  width: 90%;
+  background-color: mediumpurple;
+}
+
+figure.nixon {
+  background-color: mediumpurple;
+  
+}
+img.nixon:hover {
+  transform: scale(1.2); }
+
+  img.nixon {width:100%;
+  }
