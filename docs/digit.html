@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>DIGIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIGIT — GwR419</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="nav">
-      <a href="index.html">
-        <img src="images/thumbnail.png" alt="GwR419" width="125px" />
-      </a>
-      <div class="flex-container">
-        <nav class="icons">
-          <a href="About.html">ABOUT ME</a>
-          <a href="Resume.html">RESUME</a>
-          <a href="https://github.com/GwR419">GITHUB</a>
-          <a href="projects.html">PROJECTS</a>
-          <a href="https://sites.psu.edu/gwr419/">WORDPRESS</a>
-        </nav>
-      </div>
-    </div>
-    <div>
-      <h3>
-        <a href="projects.html">Back</a>
-      </h3>
-    </div>
-    <div class="nav">
-      <div class="flex-container">
-        <h2><a href="lidar.html">Lidar Scan |</a></h2>
-      </div>
-      <div class="flex-container">
-        <h2><a href="textcomp.html">Text Comparison Analysis |</a></h2>
-      </div>
-      <div class="flex-container">
-        <h2><a href="website_essay.html">Website Reflective Essay</a></h2>
-        <div>
-          <h2><a href="gameanalysis.html">Game Analysis</a></h2>
 
-        </div>
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★</span>
       </div>
     </div>
+
+    <nav class="nav">
+      <a href="index.html" class="logo-link">
+        <img src="images/thumbnail.png" alt="GwR419" width="90" height="90" class="logo-img" />
+        <span class="logo-text">GwR<em>419</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Resume.html">RÉSUMÉ</a></li>
+        <li><a href="https://github.com/GwR419">GITHUB</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="https://sites.psu.edu/gwr419/" class="wp-link">WORDPRESS ↗</a></li>
+      </ul>
+    </nav>
+
+    <div class="back-bar">
+      <a href="projects.html" class="back-link">← BACK</a>
+    </div>
+
+
+    <main class="page-main">
+      <div class="page-header">
+        <span class="page-tag">// DMAT COURSEWORK</span>
+        <h1 class="page-title">DIGIT</h1>
+      </div>
+      <div class="projects-grid">
+        <a href="lidar.html" class="project-card">
+          <span class="proj-icon">📡</span>
+          <h2>Lidar Scan</h2>
+          <p>3D scan of the VARIA Lab console collection at Penn State Behrend.</p>
+          <span class="proj-arrow">→</span>
+        </a>
+        <a href="textcomp.html" class="project-card">
+          <span class="proj-icon">📊</span>
+          <h2>Text Comparison Analysis</h2>
+          <p>Kennedy vs Nixon State of the Union speeches via AntConc &amp; Voyant.</p>
+          <span class="proj-arrow">→</span>
+        </a>
+        <a href="website_essay.html" class="project-card">
+          <span class="proj-icon">✍️</span>
+          <h2>Website Reflective Essay</h2>
+          <p>Reflections on building this site — HTML/CSS vs WordPress.</p>
+          <span class="proj-arrow">→</span>
+        </a>
+        <a href="gameanalysis.html" class="project-card">
+          <span class="proj-icon">🃏</span>
+          <h2>Game Analysis</h2>
+          <p>Deep dive into <em>Sacrifices Must Be Made</em> (Inscryption proto).</p>
+          <span class="proj-arrow">→</span>
+        </a>
+      </div>
+    </main>
+
+
+    <footer>
+      <p class="footer-copy">© GwR419 — ALL RIGHTS RESERVED SORTA</p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+          CC BY 4.0
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        </a>
+      </p>
+    </footer>
+
   </body>
 </html>
