@@ -578,17 +578,3 @@ img.items { width: 100%; }
   .projects-grid { grid-template-columns: 1fr; }
   .two-col { flex-direction: column; }
 }
-
-/* JavaScript Exercise 1 ---- */
-.note { display: none; margin-top: 14px; }
-.card button {
-  font-family: var(--font-disp);
-  font-size: 1.2rem;
-  letter-spacing: 0.08em;
-  padding: 8px 20px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-.card button:hover { background: var(--purple); }
