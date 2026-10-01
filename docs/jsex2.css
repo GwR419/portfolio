@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  max-width: 700px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+/* spans with no "on" class look like normal text */
+span.card,
+span.mechanic,
+span.character {
+  background-color: transparent;
+}
+
+/* spans with the "on" class get highlighted */
+span.on {
+  padding: 1px 3px;
+}
+
+span.card.on {
+  background-color: #ffe066;
+}
+
+span.mechanic.on {
+  background-color: #9fd4ff;
+  font-weight: bold;
+}
+
+span.character.on {
+  background-color: #ffb3c6;
+  font-style: italic;
+}

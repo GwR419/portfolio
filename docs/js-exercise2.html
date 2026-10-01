@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Exercise 2</title>
+    <link rel="stylesheet" type="text/css" href="jsex2.css" />
+    <script src="toggle.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Exercise 2</h1>
+    <p>Check a box to highlight those words in my notes on <em>Sacrifices Must Be Made</em>.</p>
+
+    <fieldset>
+      <legend>Highlight</legend>
+      <input type="checkbox" id="card" />
+      <label for="card">Cards</label>
+      <input type="checkbox" id="mechanic" />
+      <label for="mechanic">Mechanics</label>
+      <input type="checkbox" id="character" />
+      <label for="character">Characters</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>All</legend>
+      <button id="allOn">Turn all on</button>
+      <button id="allOff">Turn all off</button>
+    </fieldset>
+
+    <div id="notes">
+      <p><em>Sacrifices Must Be Made</em> is the game that later turned into <em>Inscryption</em>.
+        You sit in a cabin across the table from <span class="character">the hunter</span> and play a card
+        game against him with animal cards.</p>
+
+      <p>The weakest card is the <span class="card">squirrel</span>. It does not do much on its own, but
+        you can <span class="mechanic">sacrifice</span> it to pay the <span class="mechanic">blood cost</span>
+        of a stronger card like the <span class="card">stoat</span>, the <span class="card">wolf</span>, or
+        the <span class="card">grizzly</span>.</p>
+
+      <p>Flying cards like the <span class="card">raven</span> and the <span class="card">hawk</span> can
+        attack past the cards in front of them. When <span class="character">the player</span> loses, the
+        hunter keeps going with his story, and the game gets darker the longer you play.</p>
+    </div>
+
+    <p><a href="digit.html">Back</a></p>
+  </body>
+</html>
