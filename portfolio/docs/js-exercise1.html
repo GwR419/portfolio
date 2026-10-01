@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Exercise 1 — GwR419</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="showHide.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="logo-link">
+        <img src="images/thumbnail.png" alt="GwR419" width="90" height="90" class="logo-img" />
+        <span class="logo-text">GwR<em>419</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Resume.html">RÉSUMÉ</a></li>
+        <li><a href="https://github.com/GwR419">GITHUB</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="https://sites.psu.edu/gwr419/" class="wp-link">WORDPRESS ↗</a></li>
+      </ul>
+    </nav>
+
+    <div class="back-bar">
+      <a href="digit.html" class="back-link">← BACK</a>
+    </div>
+
+
+    <main class="page-main">
+      <div class="page-header">
+        <span class="page-tag">// JAVASCRIPT EXERCISE 1</span>
+        <h1 class="page-title">SHOW / HIDE</h1>
+      </div>
+
+      <div class="card">
+        <p>Click a button to show or hide my notes on each term from the JavaScript Exercise 1 reading.
+          The script for this page is in <a href="showHide.js">showHide.js</a>.</p>
+        <p>Buttons clicked so far: <span id="counter">0</span></p>
+      </div>
+
+      <div class="card">
+        <button>Window vs. Document</button>
+        <div class="note">
+          <p>The <strong>window</strong> object is the browser window (or tab) itself. It is the top level
+            of everything JavaScript can see in the browser. The <strong>document</strong> is a property of the
+            window, and it holds the actual HTML page that got loaded into it. So <code>window.document</code>
+            and <code>document</code> point to the same thing.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <button>Events</button>
+        <div class="note">
+          <p>An <strong>event</strong> is something that happens on the page, like a click, a key press, or the
+            page finishing loading. The <strong>target</strong> is the element the event happens to.
+            The <strong>event handler</strong> is the function that runs when the event happens.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <button>addEventListener</button>
+        <div class="note">
+          <p><code>addEventListener()</code> connects an event to a function. It takes the event name
+            (like <code>'click'</code>), the function to run, and <code>false</code> at the end. You give it
+            the function name without the parentheses, otherwise the function runs right away instead of
+            waiting for the event.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <button>onload vs. DOMContentLoaded</button>
+        <div class="note">
+          <p><code>window.onload</code> waits for everything on the page to load, images included.
+            <code>DOMContentLoaded</code> fires as soon as the HTML has been read, so it starts sooner.
+            Either way the point is the same: the script waits for the page to exist before it tries to
+            find elements on it. That is why my <code>init()</code> function runs on DOMContentLoaded.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <button>Index starts at 0</button>
+        <div class="note">
+          <p><code>document.getElementsByTagName('button')</code> gives back a list of every button on the page.
+            Unlike XPath, JavaScript counts from 0, so the first button is <code>buttons[0]</code> and the
+            last one is <code>buttons[buttons.length - 1]</code>.</p>
+        </div>
+      </div>
+    </main>
+
+
+    <footer>
+      <p class="footer-copy">© GwR419 — ALL RIGHTS RESERVED SORTA</p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+          CC BY 4.0
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>

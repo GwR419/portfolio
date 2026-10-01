@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Comparison — GwR419</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★ DEVELOPER ★ CREATOR ★ GwR419 ★ WELCOME TO MY CORNER OF THE WEB ★</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="logo-link">
+        <img src="images/thumbnail.png" alt="GwR419" width="90" height="90" class="logo-img" />
+        <span class="logo-text">GwR<em>419</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Resume.html">RÉSUMÉ</a></li>
+        <li><a href="https://github.com/GwR419">GITHUB</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="https://sites.psu.edu/gwr419/" class="wp-link">WORDPRESS ↗</a></li>
+      </ul>
+    </nav>
+
+    <div class="back-bar">
+      <a href="digit.html" class="back-link">← BACK</a>
+    </div>
+
+
+    <main class="page-main">
+      <div class="page-header">
+        <span class="page-tag">// DIGITAL ANALYSIS</span>
+        <h1 class="page-title">TEXT COMPARISON</h1>
+      </div>
+
+      <div class="card">
+        <p>For my text analysis with AntConc and Voyant I compared <strong>Kennedy's State of the Union</strong> with <strong>Nixon's State of the Union</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h2>Kennedy</h2>
+        <figure class="kennedy">
+          <div class="kennedy">
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-antconc.png" alt="Kennedy AntConc" />
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-kwic-cluster.PNG" alt="N-gram of size 3" />
+          </div>
+          <figcaption>AntConc N-gram of 3 for JFK's State of the Union. "The united states" was the most frequent at 10 times.</figcaption>
+        </figure>
+        <figure class="kennedy" style="margin-top:16px">
+          <div class="kennedy">
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-ngram-5.PNG" alt="N-gram 5" />
+            <img class="kennedy" src="kennedy-state-of-the-union/kennedy-5-kwic.PNG" alt="N-gram 5 KWIC" />
+            <img class="kennedy" src="kennedy-state-of-the-union/need to strengthn our nation.PNG" alt="Need to strengthen our nation" />
+          </div>
+          <figcaption>With an N-gram of 5, "need to strengthen our nation" appeared 4 times — used in a list about youth, health, civil rights, and economic resources.</figcaption>
+        </figure>
+        <h3 style="margin-top:20px">Voyant — Kennedy Dynamic Network</h3>
+        <iframe style="width:100%;max-width:500px;height:500px;border:1px solid var(--border)" src="https://voyant-tools.org/tool/CollocatesGraph/?query=new&query=world&query=nations&corpus=88f8221c4dc0b73db3d4ab55fa7b1bd3"></iframe>
+        <p>"new" — 59 uses &nbsp;|&nbsp; "world" — 43 &nbsp;|&nbsp; "nations" — 39</p>
+        <h5>Text files:</h5>
+        <p>
+          <a href="kennedy-state-of-the-union/Kennedy_1962.txt">Kennedy_1962</a> |
+          <a href="kennedy-state-of-the-union/Kennedy_1963.txt">Kennedy_1963</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Nixon</h2>
+        <figure class="nixon">
+          <div class="nixon">
+            <img class="nixon" src="nixon-state-of-the-union/nixon-antconc.png" alt="Nixon AntConc" />
+            <img class="nixon" src="nixon-state-of-the-union/Nixon-Kwic-cluster.PNG" alt="Nixon N-gram 3" />
+          </div>
+          <figcaption>AntConc N-gram of 3 for Nixon's State of the Union. "In the world" was the most frequent at 25 times.</figcaption>
+        </figure>
+        <figure class="nixon" style="margin-top:16px">
+          <div class="nixon">
+            <img class="nixon" src="nixon-state-of-the-union/nixon-ngram-5.PNG" alt="Nixon N-gram 5" />
+            <img class="nixon" src="nixon-state-of-the-union/nixon-kwic-5.PNG" alt="Nixon KWIC 5" />
+            <img class="nixon" src="nixon-state-of-the-union/can be the congress.PNG" alt="Can be the congress" style="max-width:50%" />
+          </div>
+          <figcaption>"Can be the congress that" appeared 5 times — Nixon speaking about congressional accomplishments past and future.</figcaption>
+        </figure>
+        <h3 style="margin-top:20px">Voyant — Nixon Dynamic Network</h3>
+        <iframe style="width:100%;max-width:500px;height:500px;border:1px solid var(--border)" src="https://voyant-tools.org/tool/CollocatesGraph/?view=CollocatesGraph&query=new&query=people&query=congress&corpus=850b98682508648b968ad345fa3c5682"></iframe>
+        <p>"new" — 115 uses &nbsp;|&nbsp; "people" — 105 &nbsp;|&nbsp; "congress" — 102</p>
+        <h5>Text files:</h5>
+        <p>
+          <a href="nixon-state-of-the-union/Nixon_1970.txt">Nixon_1970</a> |
+          <a href="nixon-state-of-the-union/Nixon_1971.txt">Nixon_1971</a> |
+          <a href="nixon-state-of-the-union/Nixon_1972.txt">Nixon_1972</a> |
+          <a href="nixon-state-of-the-union/Nixon_1973.txt">Nixon_1973</a> |
+          <a href="nixon-state-of-the-union/Nixon_1974.txt">Nixon_1974</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Comparison</h2>
+        <p>I wanted to see if Kennedy showed up in Nixon's speeches given they ran against each other in 1960. Kennedy's corpus was smaller (11,988 tokens vs Nixon's 19,778) — which made N-gram sizes more limited. Kennedy's 5-grams centered on people: safety, economy, health, rights. Nixon's centered on Congress and its accomplishments. The shift from people-focused to government-focused rhetoric across the 60s is striking, possibly shaped by Vietnam, the Cuban Missile Crisis, and Bay of Pigs.</p>
+      </div>
+
+      <div class="card">
+        <h2>Why?</h2>
+        <p>One of my great-uncles was fascinated by the Kennedy assassination, so I grew up around a lot of material on both Kennedy and Nixon. It seemed like a natural pair to dig into — and the context around those speeches makes the language choices even more interesting.</p>
+      </div>
+    </main>
+
+
+    <footer>
+      <p class="footer-copy">© GwR419 — ALL RIGHTS RESERVED SORTA</p>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        Licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+          CC BY 4.0
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:18px;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>
